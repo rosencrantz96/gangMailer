@@ -1,0 +1,28 @@
+{
+  "name": "gangmailer",
+  "version": "1.0.0",
+  "description": "노드메일러 연습 갱메일러",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --experimental-specifier-resolution=node ./build/server.js",
+    "start:dev": "nodemon --watch \"*.ts\" --exec \"ts-node\" ./server.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.7"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.10.4",
+    "@types/nodemailer": "^6.4.14",
+    "nodemon": "^3.0.2",
+    "tsconfig-paths": "^4.2.0"
+  }
+}
